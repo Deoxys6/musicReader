@@ -42,6 +42,7 @@ namespace Music_Reader_Program
             //Thread violinThread = new Thread(()=>playInstrument("Music Reader\\Violin.txt"));
             //violinThread.Start();
         }
+
         public static void playInstrument(String filePath)
         {
             int noteType = 13;
