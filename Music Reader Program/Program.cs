@@ -30,9 +30,13 @@ namespace Music_Reader_Program
         static int durationOfAMeasure = 1800;
         static void Main(string[] args)
         {
-            String filePath = "Music Reader\\BONETROUSLE.txt";
+            String filePath = null;
             Console.WriteLine("Enter the file path");
             filePath = Console.ReadLine().Trim();
+            if (filePath == "")
+            {
+               filePath = Path.Combine("..", "..", "Music", "BONETROUSLE.txt");
+            }
 
             //Lets the user change the txt file being played 
 
